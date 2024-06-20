@@ -1,0 +1,16 @@
+# ASP.NET
+LastGoalWinsServer/bin/
+LastGoalWinsServer/obj/
+LastGoalWinsServer/*.suo
+LastGoalWinsServer/*.user
+LastGoalWinsServer/*.userosscache
+LastGoalWinsServer/*.sln.docstates
+
+# Node.js / React
+LastGoalWinsFront/node_modules/
+LastGoalWinsFront/build/
+LastGoalWinsFront/.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
