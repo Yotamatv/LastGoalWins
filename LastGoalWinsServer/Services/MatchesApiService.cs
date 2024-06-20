@@ -34,7 +34,7 @@ namespace LastGoalWinsServer.Services
         {
             _httpClientFactory = httpClientFactory;
             date = DateOnly.FromDateTime(DateTime.Now);
-            currentSeason = date.Month >= 6 ? date.Year : date.Year - 1;
+            currentSeason = date.Month >= 8 ? date.Year : date.Year - 1;
         }
 
         string formattedDate(DateTime date)
@@ -46,8 +46,11 @@ namespace LastGoalWinsServer.Services
         }
         public async Task<ResponseModel<Match>> GetAllMatchesByLeague(int leagueid, DateTime startDate, DateTime endDate)
         {
-
-            string RequestUri = $"{baseUri}fixtures?league={leagueid}&season={currentSeason}&from={formattedDate(startDate)}&to={formattedDate(endDate)}";
+            if(leagueid==4)
+            {
+                currentSeason++;
+            }
+            string RequestUri = $"{baseUri}fixtures?league={leagueid}&season={startDate}&from={formattedDate(startDate)}&to={formattedDate(endDate)}";
             var ParsedResponse = await new ApiService<Match>(_httpClientFactory).UseAPI(RequestUri);//Makes API request and returns it as a selected class
             Console.WriteLine("Length: " + ParsedResponse.Response.Count);
             return ParsedResponse;
@@ -64,12 +67,20 @@ namespace LastGoalWinsServer.Services
         }
         public async Task<ResponseModel<LeaguesModel>> GetLeagueTable(int leagueid)
         {
+            if (leagueid == 4)
+            {
+                currentSeason++;
+            }
             string RequestUri = $"{baseUri}standings?season={currentSeason}&league={leagueid}";
             var ParsedResponse = await new ApiService<LeaguesModel>(_httpClientFactory).UseAPI(RequestUri);// Makes API request and returns it as a selected class
             return ParsedResponse;
         }
         public async Task<List<ResponseModel<PlayerStatsModel>>> GetTopScorers(int leagueid)
         {
+            if (leagueid == 4)
+            {
+                currentSeason++;
+            }
             List<ResponseModel<PlayerStatsModel>> GoalsAndAssists = new List<ResponseModel<PlayerStatsModel>>();
             string ScorersRequestUri = $"{baseUri}players/topscorers?season={currentSeason}&league={leagueid}";
             string AssistsRequestUri = $"{baseUri}players/topAssists?season={currentSeason}&league={leagueid}";

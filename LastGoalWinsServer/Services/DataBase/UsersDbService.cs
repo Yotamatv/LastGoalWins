@@ -52,7 +52,16 @@ namespace LastGoalWinsServer.Services.DataBase
 
         public async Task<bool> DeleteUserAsync(string userId)
         {
-            var user = await _context.Users.FindAsync(userId);
+            if (!Int32.TryParse(userId, out int id))
+            {
+                // Handle the case where userId is not a valid integer string
+                // Return false or throw an exception based on your application's requirement
+                return false;
+                // Alternatively, you can throw an exception:
+                // throw new ArgumentException("Invalid userId format");
+            }
+
+            var user = await _context.Users.FindAsync(id);
             if (user == null)
             {
                 return false;
@@ -62,12 +71,14 @@ namespace LastGoalWinsServer.Services.DataBase
             await _context.SaveChangesAsync();
             return true;
         }
+
         public async Task<UserSql> EditUserAsync(string userId, UserSql updatedUser)
         {
-            var userSqlModel = await _context.Users.FindAsync(userId);
+            int id = int.Parse(userId);
+            var userSqlModel = await _context.Users.FindAsync(id);
             if (userSqlModel == null)
             {
-                throw new UserNotFoundException("User with ID: " + userId + " not found.");
+                throw new UserNotFoundException("User with ID: " + id + " not found.");
             }
 
             // Update fields in UserSqlModel

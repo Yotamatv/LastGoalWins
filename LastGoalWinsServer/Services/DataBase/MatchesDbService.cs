@@ -2,11 +2,13 @@
 using LastGoalWinsServer.Models.General;
 using LastGoalWinsServer.Models.Lineups;
 using LastGoalWinsServer.Models.MatchModel;
+using LastGoalWinsServer.Models.PlayerStats;
 using LastGoalWinsServer.Models.SQLModels;
 using LastGoalWinsServer.Models.Standings;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Numerics;
 using System.Text.RegularExpressions;
 using Match = LastGoalWinsServer.Models.MatchModel.Match;
 
@@ -70,14 +72,66 @@ namespace LastGoalWinsServer.Services.DataBase
         }
         public async Task<List<LeagueStandingSql>> GetLeagueTable(int leagueid)
         {
-            await TrackApiCall(0, leagueid, DateTime.Now, DateTime.Now, "GetLeagueTable");
             if (DateTime.Now.DayOfYear - _context.LeagueStandings.Where(league => league.Leagueid == leagueid).First().LastUpdated.DayOfYear >= 1)
             {
                 //if the league was last updated more than a day ago, update, else return the table
                 var leaguesModel = await _matchesApiService.GetLeagueTable(leagueid);
                 await UpdateLeagueTable(leaguesModel);
             }
+            await TrackApiCall(0, leagueid, DateTime.Now, DateTime.Now, "GetLeagueTable");
             return _context.LeagueStandings.Where(league => league.Leagueid == leagueid).ToList();
+        }
+        public async Task<List<PlayerLeaderboardSql>> GetTopScorers(int leagueid)
+        {
+            if (DateTime.Now.DayOfYear - _context.PlayerLeaderboards.Where(league => league.Leagueid == leagueid).First().LastUpdated.DayOfYear >= 1)
+            {
+                //if the league was last updated more than a day ago, update, else return the table
+                var topScorersModel = await _matchesApiService.GetTopScorers(leagueid);
+                await UpdateTopScorers(topScorersModel);
+            }
+            await TrackApiCall(0, leagueid, DateTime.Now, DateTime.Now, "GetTopScorers");
+            return _context.PlayerLeaderboards.Where(league => league.Leagueid == leagueid).ToList();
+        }
+        public async Task<bool> UpdateTopScorers(List<ResponseModel<PlayerStatsModel>> topScorersModel)
+        {
+            int leagueid = int.Parse(topScorersModel[0].Parameters.League);
+            var players = new List<PlayerStatsModel>();
+            foreach (var player in topScorersModel[0].Response)
+            {
+                //Map a list of all the players because it's a list in list
+
+                players.Add(player);
+            }
+            foreach (var player in players.OrderByDescending(p => (p.Statistics[0].Goals.Total)))
+            {
+                try
+                {
+                    var playerSql = new PlayerLeaderboardSql(leagueid, player);
+                    var existingLeaderboard = _context.PlayerLeaderboards.Where(player_ => player_.Leagueid == leagueid
+                    && player_.Name == playerSql.Name).FirstOrDefault();
+                    if (existingLeaderboard == null)
+                    {
+                        _context.PlayerLeaderboards.Add(playerSql);
+                    }
+                    else
+                    {
+                        existingLeaderboard.Leagueid = leagueid;
+                        existingLeaderboard.Name = playerSql.Name;
+                        existingLeaderboard.Club = playerSql.Club;
+                        existingLeaderboard.ClubLogo = playerSql.ClubLogo;
+                        existingLeaderboard.Goals = playerSql.Goals;
+                        existingLeaderboard.Assists = playerSql.Assists;
+                        existingLeaderboard.LastUpdated = playerSql.LastUpdated;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                    return false;
+                }
+                await _context.SaveChangesAsync();
+            }
+            return true;
         }
         public async Task<bool> UpdtaeFixtures(ResponseModel<Match> MatchesModel)
         {
@@ -271,7 +325,7 @@ namespace LastGoalWinsServer.Services.DataBase
         public async Task<List<List<LineupSql>>> GetLineup(int fixtureId)
         {
             List<List<LineupSql>> response = new List<List<LineupSql>>();
-            if(!_context.Fixtures.Any(fixture=>fixture.Id == fixtureId))
+            if (!_context.Fixtures.Any(fixture => fixture.Id == fixtureId))
             {
                 return response;
             }
@@ -327,12 +381,15 @@ namespace LastGoalWinsServer.Services.DataBase
             {
                 return response;
             }
+            bool isMatchFinished = _context.Fixtures.Where(fixture => fixture.Id == fixtureId)
+                .FirstOrDefault().StatusType == "Finished";
             var existingEvents = _context.Events
                 .Where(lineup => lineup.ClubsInFixturesId == fixtureId * 10
                                  || lineup.ClubsInFixturesId == fixtureId * 10 + 1)
                 .ToList();
 
-            if (existingEvents.Count == 0)
+            if (existingEvents.Count == 0 || !isMatchFinished
+                )
             {
                 var eventsModel = await _matchesApiService.GetEvents(fixtureId);
                 await UpdateEvents(eventsModel);

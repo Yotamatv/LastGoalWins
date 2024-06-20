@@ -48,16 +48,7 @@ namespace LastGoalWinsServer.Controllers
             var matchesResponse = await _matchesDbService.GetFixturesByLeague(leagueid, start, end);
             return Ok(matchesResponse);
         }
-
-
-        [HttpGet("test")]
-        [AllowAnonymous]
-        public IActionResult GetAllMatchesTest()
-        {
-            Console.WriteLine("GetAllMatchesTest");
-            return Ok(MockResponse.mockresponse);
-        }
-
+                     
         [HttpGet("LeagueTable/{leagueid}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetLeagueTable(int leagueid)
@@ -70,7 +61,7 @@ namespace LastGoalWinsServer.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> GetTopScorers(int leagueid)
         {
-            var topScorersResponse = await _matchesApiService.GetTopScorers(leagueid);
+            var topScorersResponse = await _matchesDbService.GetTopScorers(leagueid);
             return Ok(topScorersResponse);
         }
 

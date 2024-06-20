@@ -103,6 +103,23 @@ namespace LastGoalWinsServer.Controllers
             return NoContent();
         }
 
+        [HttpPut("MakeAdmin/{id}")]
+        [Authorize(Policy = "MustBeAdmin")]
+        public async Task<IActionResult> Put(string id)
+        {
+            try
+            {
+                UserSql existingUser=await _usersService.GetOneUserAsync(id);
+                existingUser.IsAdmin = true;
+                UserSql newUser = await _usersService.EditUserAsync(id,existingUser);
+            }
+            catch (UserNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
+            return NoContent();
+        }
+
         // DELETE /<UsersController>/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
