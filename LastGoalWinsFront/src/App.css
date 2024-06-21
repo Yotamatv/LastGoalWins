@@ -1,0 +1,489 @@
+/* General styles */
+/* Layout */
+/* Header */
+/* Matches */
+/* MatchesPage */
+/* Events */
+/* Login */
+/* Button */
+/* Styles for the ErrorPage component */
+/* Responsive Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.layout {
+  background-image: url("https://wallpapers.com/images/hd/white-hd-2560-x-1440-background-t3xnnmvx4j7d6hz5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #c4bcaf;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3vh;
+  border-bottom: 1px solid #eaeaea;
+}
+.Header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.Header .logo img {
+  height: 39px;
+  width: 55px;
+}
+.Header .nav-buttons .btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2e754e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Header .nav-buttons .btn:hover {
+  background-color: #255c3e;
+}
+
+.Matches {
+  overflow-y: auto;
+  max-height: 560px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Matches .Match {
+  margin: auto;
+  display: flex;
+  min-height: 70px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.Matches .Match p {
+  font-size: 12px;
+  margin: 0;
+  padding-top: 5px;
+}
+.Matches .Match h4 {
+  font-size: 50px;
+  margin: -10px;
+  font-weight: 500;
+}
+.Matches .Match0 {
+  width: 50vw;
+  transition: min-height 1s;
+  background-color: #8f8f8f;
+}
+.Matches .Match1 {
+  width: 50vw;
+  background-color: #2e754e;
+}
+.Matches .Score {
+  width: 25%;
+}
+.Matches .Team {
+  width: 30%;
+}
+.Matches .Team img {
+  height: 60px;
+  width: 60px;
+}
+.Matches .Arrow {
+  width: 7.5%;
+  color: white;
+}
+.Matches .ExpandedView {
+  min-height: 0;
+  overflow: hidden;
+  transition: min-height 1s;
+}
+.Matches .ExpandedView.expanded {
+  min-height: 300px;
+}
+
+.MatchesPage .Navbar {
+  width: 48vw;
+  margin: auto;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.MatchesPage .DateInputs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.MatchesPage .DateInputs input {
+  margin: 0px;
+  padding: 10px;
+  font-size: 16px;
+}
+.MatchesPage .ComponentButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.MatchesPage .ComponentButtons .NavButtonPressed {
+  background-color: #2e754e;
+}
+.MatchesPage .ComponentButtons .LeagueButton button {
+  border-radius: 10%;
+}
+.MatchesPage .ComponentButtons button {
+  margin: 0px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #8f8f8f;
+  color: white;
+}
+.MatchesPage .ComponentButtons button:hover {
+  background-image: linear-gradient(#8f8f8f 1%, #2e754e 99%);
+}
+.MatchesPage .ComponentButtons button:active {
+  background-image: linear-gradient(#2e754e 1%, #8f8f8f 99%);
+}
+.MatchesPage .ComponentDisplay {
+  margin-top: 20px;
+}
+
+.Events {
+  overflow-y: auto;
+  height: 280px;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 12%;
+  transition: height 1s;
+}
+.Events .Event {
+  max-height: 58px;
+  min-height: 58px;
+  width: 80%;
+  font-size: medium;
+  align-items: center;
+  color: #8f8f8f;
+  margin: auto;
+  padding-top: 5px;
+}
+.Events .Event .Container {
+  flex: 1;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.Events .Event p {
+  margin-top: -5px;
+  color: #9f9f9f;
+}
+.Events .Event img {
+  height: 28px;
+  width: 28px;
+}
+.Events .Event .Home {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+}
+.Events .Event .Away {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Login {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+}
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2e754e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #255c3e;
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.error-page img {
+  max-width: 100%;
+  height: auto;
+}
+.error-page b {
+  color: black;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Header .nav-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .Header .nav-buttons .btn {
+    margin: 5px 0;
+  }
+  .MatchesPage .Navbar {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .MatchesPage .Navbar .NavButtonPressed {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .MatchesPage .Navbar .NavButton {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .Matches .Match0 {
+    width: 90vw;
+  }
+  .Matches .Match1 {
+    width: 90vw;
+  }
+  .Events {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .Login {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .form-group label {
+    font-size: 14px;
+  }
+  .form-group input {
+    padding: 6px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .Header .logo {
+    font-size: 20px;
+  }
+  .Header .logo img {
+    height: 30px;
+    width: 45px;
+  }
+  .Header .nav-buttons .btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .Matches .Match h4 {
+    font-size: 36px;
+  }
+  .Matches .Match0 {
+    width: 100%;
+  }
+  .Matches .Match1 {
+    width: 100%;
+  }
+  .MatchesPage .Navbar {
+    width: 100%;
+  }
+  .MatchesPage .Navbar .NavButtonPressed {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .MatchesPage .Navbar .NavButton {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .Events {
+    width: 100%;
+  }
+  .Login {
+    width: 100%;
+  }
+}
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.user-box {
+  background: #c4bcaf;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.user-details {
+  text-align: left;
+  margin-bottom: 16px;
+  width: 100%;
+  color: black;
+}
+.user-details p {
+  margin: 4px 0;
+}
+
+.user-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.user-actions button {
+  background: #2e754e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.user-actions button:hover {
+  opacity: 0.9;
+  background: #255c3e;
+}
+.user-actions button:last-child {
+  background: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .user-box {
+    width: 100%;
+    max-width: none;
+  }
+  .user-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .user-actions button {
+    width: 100%;
+  }
+}
+.TopScorers {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.TopScorers ol {
+  padding-left: 20px;
+  width: 33%;
+  list-style: decimal;
+}
+.TopScorers ol .top-scorer-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #c4bcaf;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.TopScorers ol .top-scorer-item .player-name {
+  font-weight: bold;
+  margin-right: 10px;
+  flex: 0 0 150px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.TopScorers ol .top-scorer-item .club-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.TopScorers ol .top-scorer-item .player-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.TopScorers ol .top-scorer-item .player-stats .goals,
+.TopScorers ol .top-scorer-item .player-stats .assists {
+  font-size: 14px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=app.css.map */

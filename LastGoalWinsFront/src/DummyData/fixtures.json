@@ -1,0 +1,863 @@
+[
+  {
+    "fixture": {
+      "id": 1145509,
+      "leagueid": 4,
+      "referee": "Clement Turpin, France",
+      "timestamp": 1718391600,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-14T22:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Fußball Arena München",
+      "status": "FT",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:51:19.5787166+03:00",
+      "statusType": "Finished"
+    },
+    "home": {
+      "id": 11455091,
+      "fixtureid": 1145509,
+      "name": "Germany",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/25.png",
+      "flag": "https://media.api-sports.io/football/teams/25.png",
+      "home": true,
+      "goalsScored": 5,
+      "lastUpdated": "2024-06-15T14:51:19.6585127+03:00"
+    },
+    "away": {
+      "id": 11455090,
+      "fixtureid": 1145509,
+      "name": "Scotland",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/1108.png",
+      "flag": "https://media.api-sports.io/football/teams/1108.png",
+      "home": false,
+      "goalsScored": 1,
+      "lastUpdated": "2024-06-15T14:51:19.8014572+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145510,
+      "leagueid": 4,
+      "referee": "S. Vinčić",
+      "timestamp": 1718456400,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-15T16:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Cologne Stadium",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.24",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455101,
+      "fixtureid": 1145510,
+      "name": "Hungary",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/769.png",
+      "flag": "https://media.api-sports.io/football/teams/769.png",
+      "home": true,
+      "goalsScored": 4,
+      "lastUpdated": "2024-06-15T14:51:19.668045+03:00"
+    },
+    "away": {
+      "id": 11455100,
+      "fixtureid": 1145510,
+      "name": "Switzerland",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/15.png",
+      "flag": "https://media.api-sports.io/football/teams/15.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8077996+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145511,
+      "leagueid": 4,
+      "referee": "M. Oliver",
+      "timestamp": 1718467200,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-15T19:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Olympiastadion Berlin",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.42",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455111,
+      "fixtureid": 1145511,
+      "name": "Spain",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/9.png",
+      "flag": "https://media.api-sports.io/football/teams/9.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.6761309+03:00"
+    },
+    "away": {
+      "id": 11455110,
+      "fixtureid": 1145511,
+      "name": "Croatia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/3.png",
+      "flag": "https://media.api-sports.io/football/teams/3.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8156758+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145512,
+      "leagueid": 4,
+      "referee": "F. Zwayer",
+      "timestamp": 1718478000,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-15T22:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "BVB Stadion Dortmund",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.43",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455121,
+      "fixtureid": 1145512,
+      "name": "Italy",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/768.png",
+      "flag": "https://media.api-sports.io/football/teams/768.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.6831531+03:00"
+    },
+    "away": {
+      "id": 11455120,
+      "fixtureid": 1145512,
+      "name": "Albania",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/778.png",
+      "flag": "https://media.api-sports.io/football/teams/778.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8223492+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145513,
+      "leagueid": 4,
+      "referee": "S. Schärer",
+      "timestamp": 1718553600,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-16T19:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Stuttgart Arena",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.433",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455131,
+      "fixtureid": 1145513,
+      "name": "Slovenia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/1091.png",
+      "flag": "https://media.api-sports.io/football/teams/1091.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.6897571+03:00"
+    },
+    "away": {
+      "id": 11455130,
+      "fixtureid": 1145513,
+      "name": "Denmark",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/21.png",
+      "flag": "https://media.api-sports.io/football/teams/21.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8287175+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145514,
+      "leagueid": 4,
+      "referee": "D. Orsato",
+      "timestamp": 1718564400,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-16T22:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Arena AufSchalke",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.44",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455141,
+      "fixtureid": 1145514,
+      "name": "Serbia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/14.png",
+      "flag": "https://media.api-sports.io/football/teams/14.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.6968604+03:00"
+    },
+    "away": {
+      "id": 11455140,
+      "fixtureid": 1145514,
+      "name": "England",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/10.png",
+      "flag": "https://media.api-sports.io/football/teams/10.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8360533+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145515,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718650800,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-17T22:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Düsseldorf Arena",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.443",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455151,
+      "fixtureid": 1145515,
+      "name": "Austria",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/775.png",
+      "flag": "https://media.api-sports.io/football/teams/775.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7039409+03:00"
+    },
+    "away": {
+      "id": 11455150,
+      "fixtureid": 1145515,
+      "name": "France",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/2.png",
+      "flag": "https://media.api-sports.io/football/teams/2.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8424832+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145516,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718640000,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-17T19:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Frankfurt Arena",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.447",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455161,
+      "fixtureid": 1145516,
+      "name": "Belgium",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/1.png",
+      "flag": "https://media.api-sports.io/football/teams/1.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.709756+03:00"
+    },
+    "away": {
+      "id": 11455160,
+      "fixtureid": 1145516,
+      "name": "Slovakia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/773.png",
+      "flag": "https://media.api-sports.io/football/teams/773.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8496687+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145517,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718737200,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-18T22:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Leipzig Stadium",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.453",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455171,
+      "fixtureid": 1145517,
+      "name": "Portugal",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/27.png",
+      "flag": "https://media.api-sports.io/football/teams/27.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7160816+03:00"
+    },
+    "away": {
+      "id": 11455170,
+      "fixtureid": 1145517,
+      "name": "Czech Republic",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/770.png",
+      "flag": "https://media.api-sports.io/football/teams/770.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.856497+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145518,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718823600,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-19T22:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Cologne Stadium",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.457",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455181,
+      "fixtureid": 1145518,
+      "name": "Scotland",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/1108.png",
+      "flag": "https://media.api-sports.io/football/teams/1108.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7221247+03:00"
+    },
+    "away": {
+      "id": 11455180,
+      "fixtureid": 1145518,
+      "name": "Switzerland",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/15.png",
+      "flag": "https://media.api-sports.io/football/teams/15.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8630887+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145519,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718812800,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-19T19:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Stuttgart Arena",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.463",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455191,
+      "fixtureid": 1145519,
+      "name": "Germany",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/25.png",
+      "flag": "https://media.api-sports.io/football/teams/25.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7277936+03:00"
+    },
+    "away": {
+      "id": 11455190,
+      "fixtureid": 1145519,
+      "name": "Hungary",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/769.png",
+      "flag": "https://media.api-sports.io/football/teams/769.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.8703982+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145520,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718802000,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-19T16:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Volksparkstadion",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.467",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455201,
+      "fixtureid": 1145520,
+      "name": "Croatia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/3.png",
+      "flag": "https://media.api-sports.io/football/teams/3.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7339247+03:00"
+    },
+    "away": {
+      "id": 11455200,
+      "fixtureid": 1145520,
+      "name": "Albania",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/778.png",
+      "flag": "https://media.api-sports.io/football/teams/778.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9054618+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145521,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718910000,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-20T22:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Arena AufSchalke",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.473",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455211,
+      "fixtureid": 1145521,
+      "name": "Spain",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/9.png",
+      "flag": "https://media.api-sports.io/football/teams/9.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7398804+03:00"
+    },
+    "away": {
+      "id": 11455210,
+      "fixtureid": 1145521,
+      "name": "Italy",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/768.png",
+      "flag": "https://media.api-sports.io/football/teams/768.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9159149+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145522,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718899200,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-20T19:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Frankfurt Arena",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.477",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455221,
+      "fixtureid": 1145522,
+      "name": "Denmark",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/21.png",
+      "flag": "https://media.api-sports.io/football/teams/21.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7458285+03:00"
+    },
+    "away": {
+      "id": 11455220,
+      "fixtureid": 1145522,
+      "name": "England",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/10.png",
+      "flag": "https://media.api-sports.io/football/teams/10.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9241489+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145523,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718888400,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-20T16:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Fußball Arena München",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.48",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455231,
+      "fixtureid": 1145523,
+      "name": "Slovenia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/1091.png",
+      "flag": "https://media.api-sports.io/football/teams/1091.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.753024+03:00"
+    },
+    "away": {
+      "id": 11455230,
+      "fixtureid": 1145523,
+      "name": "Serbia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/14.png",
+      "flag": "https://media.api-sports.io/football/teams/14.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9305755+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1145524,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718996400,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-21T22:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Leipzig Stadium",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.487",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11455241,
+      "fixtureid": 1145524,
+      "name": "Netherlands",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/1118.png",
+      "flag": "https://media.api-sports.io/football/teams/1118.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7594331+03:00"
+    },
+    "away": {
+      "id": 11455240,
+      "fixtureid": 1145524,
+      "name": "France",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/2.png",
+      "flag": "https://media.api-sports.io/football/teams/2.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9372612+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1189846,
+      "leagueid": 4,
+      "referee": "Artur Soares Dias",
+      "timestamp": 1718542800,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-16T16:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Volksparkstadion",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.5",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11898461,
+      "fixtureid": 1189846,
+      "name": "Poland",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/24.png",
+      "flag": "https://media.api-sports.io/football/teams/24.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7665936+03:00"
+    },
+    "away": {
+      "id": 11898460,
+      "fixtureid": 1189846,
+      "name": "Netherlands",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/1118.png",
+      "flag": "https://media.api-sports.io/football/teams/1118.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9429732+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1189847,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718629200,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-17T16:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "Fußball Arena München",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.507",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11898471,
+      "fixtureid": 1189847,
+      "name": "Romania",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/774.png",
+      "flag": "https://media.api-sports.io/football/teams/774.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7735478+03:00"
+    },
+    "away": {
+      "id": 11898470,
+      "fixtureid": 1189847,
+      "name": "Ukraine",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/772.png",
+      "flag": "https://media.api-sports.io/football/teams/772.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9498789+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1189848,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718726400,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-18T19:00:00+03:00",
+      "fixtureRound": 1,
+      "season": 2024,
+      "venue": "BVB Stadion Dortmund",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.51",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11898481,
+      "fixtureid": 1189848,
+      "name": "Turkey",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/777.png",
+      "flag": "https://media.api-sports.io/football/teams/777.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7806637+03:00"
+    },
+    "away": {
+      "id": 11898480,
+      "fixtureid": 1189848,
+      "name": "Georgia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/1104.png",
+      "flag": "https://media.api-sports.io/football/teams/1104.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9557861+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1189849,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718974800,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-21T16:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Düsseldorf Arena",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.517",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11898491,
+      "fixtureid": 1189849,
+      "name": "Slovakia",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/773.png",
+      "flag": "https://media.api-sports.io/football/teams/773.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7877047+03:00"
+    },
+    "away": {
+      "id": 11898490,
+      "fixtureid": 1189849,
+      "name": "Ukraine",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/772.png",
+      "flag": "https://media.api-sports.io/football/teams/772.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9617584+03:00"
+    }
+  },
+  {
+    "fixture": {
+      "id": 1189850,
+      "leagueid": 4,
+      "referee": null,
+      "timestamp": 1718985600,
+      "timezone": "UTC",
+      "fixtureDate": "2024-06-21T19:00:00+03:00",
+      "fixtureRound": 2,
+      "season": 2024,
+      "venue": "Olympiastadion Berlin",
+      "status": "NS",
+      "homeWinOdd": 0,
+      "awayWinOdd": 0,
+      "drawOdd": 0,
+      "lastUpdated": "2024-06-15T14:38:49.52",
+      "statusType": "Scheduled"
+    },
+    "home": {
+      "id": 11898501,
+      "fixtureid": 1189850,
+      "name": "Poland",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/24.png",
+      "flag": "https://media.api-sports.io/football/teams/24.png",
+      "home": true,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.7943103+03:00"
+    },
+    "away": {
+      "id": 11898500,
+      "fixtureid": 1189850,
+      "name": "Austria",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/teams/775.png",
+      "flag": "https://media.api-sports.io/football/teams/775.png",
+      "home": false,
+      "goalsScored": 0,
+      "lastUpdated": "2024-06-15T14:51:19.9687325+03:00"
+    }
+  }
+]

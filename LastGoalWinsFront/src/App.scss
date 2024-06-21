@@ -1,0 +1,521 @@
+$color_1: white;
+$color_2: #fff;
+$color_3: #8f8f8f;
+$color_4: #9f9f9f;
+$color_5: black;
+$color_6: red;
+$font-family_1: Arial, sans-serif;
+$background-color_1: #c4bcaf;
+$background-color_2: #2e754e;
+$background-color_3: #255c3e;
+$background-color_4: #8f8f8f;
+$background-color_5: #d9d9d9;
+$background-color_6: #fff;
+
+/* General styles */
+/* Layout */
+/* Header */
+/* Matches */
+/* MatchesPage */
+/* Events */
+/* Login */
+/* Button */
+/* Styles for the ErrorPage component */
+/* Responsive Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family_1;
+}
+h1 {
+  color: $color_5;
+  text-align: center;
+}
+.layout {
+  background-image: url("https://wallpapers.com/images/hd/white-hd-2560-x-1440-background-t3xnnmvx4j7d6hz5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color_1;
+  min-height: 100vh;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $background-color_1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3vh;
+  border-bottom: 1px solid #eaeaea;
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    img {
+      height: 39px;
+      width: 55px;
+    }
+  }
+  .nav-buttons {
+    .btn {
+      margin-left: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      color: $color_2;
+      background-color: $background-color_2;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: $background-color_3;
+      }
+    }
+  }
+}
+.Matches {
+  .Match {
+    margin: auto;
+    display: flex;
+    min-height: 70px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    p {
+      font-size: 12px;
+      margin: 0;
+      padding-top: 5px;
+    }
+    h4 {
+      font-size: 50px;
+      margin: -10px;
+      font-weight: 500;
+    }
+  }
+  overflow-y: auto;
+  max-height: 560px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .Match0 {
+    width: 50vw;
+    transition: min-height 1s;
+    background-color: $background-color_4;
+  }
+  .Match1 {
+    width: 50vw;
+    background-color: $background-color_2;
+  }
+  .Score {
+    width: 25%;
+  }
+  .Team {
+    width: 30%;
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+  .Arrow {
+    width: 7.5%;
+    color: $color_1;
+  }
+  .ExpandedView {
+    min-height: 0;
+    overflow: hidden;
+    transition: min-height 1s;
+  }
+  .ExpandedView.expanded {
+    min-height: 300px;
+  }
+}
+.MatchesPage {
+  .Navbar {
+    width: 48vw;
+    margin: auto;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .DateInputs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    input {
+      margin: 0px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .ComponentButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    .NavButtonPressed {
+      background-color: $background-color_2;
+    }
+    .LeagueButton {
+      button {
+        border-radius: 10%;
+      }
+    }
+    button {
+      margin: 0px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: $background-color_4;
+      color: $color_1;
+      // border-radius: 8%;
+
+      &:hover {
+        background-image: linear-gradient(#8f8f8f 1%, #2e754e 99%);
+      }
+      &:active {
+        background-image: linear-gradient(#2e754e 1%, #8f8f8f 99%);
+      }
+    }
+  }
+
+  .ComponentDisplay {
+    margin-top: 20px;
+  }
+}
+
+.Events {
+  overflow-y: auto;
+  height: 280px;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+  background-color: $background-color_5;
+  border-radius: 12%;
+  transition: height 1s;
+  .Event {
+    max-height: 58px;
+    min-height: 58px;
+    width: 80%;
+    font-size: medium;
+    align-items: center;
+    color: $color_3;
+    margin: auto;
+    padding-top: 5px;
+    .Container {
+      flex: 1;
+      text-align: center;
+      padding-bottom: 5px;
+    }
+    p {
+      margin-top: -5px;
+      color: $color_4;
+    }
+    img {
+      height: 28px;
+      width: 28px;
+    }
+    .Home {
+      display: flex;
+      text-align: left;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .Away {
+      display: flex;
+      text-align: right;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.Login {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: $background-color_6;
+}
+.form-group {
+  margin-bottom: 15px;
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: $color_5;
+  }
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .error {
+    color: $color_6;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: $color_2;
+  background-color: $background-color_2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $background-color_3;
+  }
+}
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  b {
+    color: $color_5;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    text-align: center;
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      .btn {
+        margin: 5px 0;
+      }
+    }
+  }
+  .MatchesPage {
+    .Navbar {
+      flex-direction: column;
+      width: 90vw;
+      .NavButtonPressed {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .NavButton {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .Matches {
+    .Match0 {
+      width: 90vw;
+    }
+    .Match1 {
+      width: 90vw;
+    }
+  }
+  .Events {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .Login {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .form-group {
+    label {
+      font-size: 14px;
+    }
+    input {
+      padding: 6px;
+    }
+  }
+  .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .Header {
+    .logo {
+      font-size: 20px;
+      img {
+        height: 30px;
+        width: 45px;
+      }
+    }
+    .nav-buttons {
+      .btn {
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+    }
+  }
+  .Matches {
+    .Match {
+      h4 {
+        font-size: 36px;
+      }
+    }
+    .Match0 {
+      width: 100%;
+    }
+    .Match1 {
+      width: 100%;
+    }
+  }
+  .MatchesPage {
+    .Navbar {
+      width: 100%;
+      .NavButtonPressed {
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      .NavButton {
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .Events {
+    width: 100%;
+  }
+  .Login {
+    width: 100%;
+  }
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+.user-box {
+  background: $background-color_1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.user-details {
+  text-align: left;
+  margin-bottom: 16px;
+  width: 100%;
+  color: $color_5;
+  p {
+    margin: 4px 0;
+  }
+}
+.user-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  button {
+    background: $background-color_2;
+    color: $color_1;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+      background: $background-color_3;
+    }
+    &:last-child {
+      background: #dc3545;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .user-box {
+    width: 100%;
+    max-width: none;
+  }
+  .user-actions {
+    flex-direction: column;
+    gap: 8px;
+    button {
+      width: 100%;
+    }
+  }
+}
+.TopScorers {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+
+  ol {
+    padding-left: 20px;
+    width: 33%;
+    list-style: decimal;
+
+    .top-scorer-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: $background-color_1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      .player-name {
+        font-weight: bold;
+        margin-right: 10px;
+        flex: 0 0 150px; // Fixed width for player names
+        text-align: left; // Align text to the left
+        white-space: nowrap; // Prevent text wrapping
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .club-logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .player-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .goals,
+        .assists {
+          font-size: 14px;
+          color: $color_2;
+        }
+      }
+    }
+  }
+}
