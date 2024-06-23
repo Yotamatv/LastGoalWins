@@ -2,7 +2,7 @@ Hello all!
 Welcome to last goal wins, this is a site to view football scores and stats.
 To run execute git clone on the repo, then go to \LastGoalWinsFront and run npm i, npm start to start the frontend environment.
 for the backend simplly open \LastGoalWinsServer and run it in visual studio.
-the DB isn't live it was on localhost.
+the DB isn't live it was on localhost. if needed i can make test date for testing, contact 0544777802
 features:
 view matches:
 the user can select a league, filter by date and see matches' scores and events(goals, assists, cards etc..)
@@ -13,4 +13,6 @@ similarly, we can view top scorers to each league in the stats tab, updates ever
 
 admin area:
 admin users can use the user mangement center in which they can view all users, delete them or make them admins.
+
+
 
